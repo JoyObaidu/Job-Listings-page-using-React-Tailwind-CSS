@@ -4,8 +4,8 @@ import Button from './Button'
 
 const FilterBar = ({ filters, onRemove, onClear }) => {
   return (
-    <div className="bg-white shadow p-4 rounded flex flex-wrap items-center justify-between">
-      <div className="flex flex-wrap gap-2">
+    <div className="bg-white p-4 md:p-6 rounded shadow mb-4 flex items-center justify-between flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 text-2xl md:text-xl">
         {filters.map((filter) => (
           <FilterTag key={filter} label={filter} onRemove={onRemove} />
         ))}
